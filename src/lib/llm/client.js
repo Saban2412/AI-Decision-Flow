@@ -1,0 +1,7 @@
+import OpenAI from "openai";
+
+export const llmClient = new OpenAI({
+  baseURL: process.env.LLM_BASE_URL,
+  apiKey: process.env.LLM_API_KEY || "",
+  timeout: 30000,
+});
