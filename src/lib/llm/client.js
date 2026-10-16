@@ -7,4 +7,5 @@ export const llmClient = new OpenAI({
     "HTTP-Referer": "http://localhost:3000", // Opciono ali preporučeno za OpenRouter
     "X-Title": "Visual AI Workflow Builder",
   },
+  timeout: 30000,
 });
